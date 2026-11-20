@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dashboard — Trackora Portal</title><meta name="description" content="Trackora — premium GPS tracking frontend concept (demo).">
+<link rel="icon" type="image/svg+xml" href="assets/logos/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/products.css">
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head><body class="portal" data-page="dashboard">
+
+<div class="portal-layout">
+ <aside class="sidebar" id="sidebar"><a class="logo" href="index.html"><img src="assets/logos/logo.svg" alt="Trackora"></a><nav class="side-nav"><a href="dashboard.html"><img src="assets/icons/grid.svg" alt="" >Dashboard</a><a href="live-tracking.html"><img src="assets/icons/pin.svg" alt="" >Live Tracking</a><a href="devices.html"><img src="assets/icons/device.svg" alt="" >Devices</a><a href="alerts.html"><img src="assets/icons/bell.svg" alt="" >Alerts</a><a href="history.html"><img src="assets/icons/history.svg" alt="" >History</a><a href="settings.html"><img src="assets/icons/gear.svg" alt="" >Settings</a></nav>
+  <div class="side-foot">Frontend preview — sample data.<br><a href="index.html">← Back to website</a><br><a href="login.html">Log out (demo)</a></div></aside>
+ <div class="portal-main"><div class="portal-top"><div style="display:flex;align-items:center;gap:12px"><button class="side-toggle" id="sideToggle" aria-label="Toggle menu">☰</button><h1>Dashboard</h1></div>
+  <div class="top-right"><button class="cart-btn" data-open-cart aria-label="Cart" style="background:var(--navy);border-radius:10px;padding:9px"><svg viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l3 12h11l2-8H6"/></svg><span class="cart-count" style="display:none">0</span></button><div class="user-pill"><div class="avatar">DU</div><span>Demo User</span></div></div></div>
+  <div class="portal-content"><div class="demo-banner"><strong>Preview only.</strong> All devices, locations, alerts and history are static sample data. The map is an illustrative placeholder — no real GPS data is shown.</div><div class="stat-grid"><div class="stat"><div class="icon-box"><img src="assets/icons/device.svg" alt="" ></div><div><strong id="statDevices">–</strong><span>Devices</span></div></div><div class="stat"><div class="icon-box"><img src="assets/icons/bolt.svg" alt="" ></div><div><strong id="statOnline">–</strong><span>Online (sample)</span></div></div><div class="stat"><div class="icon-box"><img src="assets/icons/bell.svg" alt="" ></div><div><strong id="statAlerts">–</strong><span>Unread alerts</span></div></div><div class="stat"><div class="icon-box"><img src="assets/icons/history.svg" alt="" ></div><div><strong id="statDist">–</strong><span>Distance this week (sample)</span></div></div></div>
+<div class="dash-grid"><div class="panel"><div class="panel-head"><h2>Map preview</h2><a class="btn btn-outline btn-sm" href="live-tracking.html">Open live tracking</a></div><div class="map-ph" id="dashMap"></div></div>
+<div class="panel"><div class="panel-head"><h2>Devices</h2><a class="btn btn-outline btn-sm" href="devices.html">Manage</a></div><div class="device-list" id="dashDevices"></div></div></div>
+<div class="dash-grid"><div class="panel"><div class="panel-head"><h2>Distance per day (sample)</h2></div><div class="bar-chart" id="chart" style="margin-bottom:28px"></div></div>
+<div class="panel"><div class="panel-head"><h2>Alerts preview</h2><a class="btn btn-outline btn-sm" href="alerts.html">View all</a></div><div id="dashAlerts"></div></div></div>
+<div class="panel"><div class="panel-head"><h2>Location history preview</h2><a class="btn btn-outline btn-sm" href="history.html">Full history</a></div><div class="table-wrap" style="border:none"><table class="tbl"><thead><tr><th>Device</th><th>Date</th><th>Distance</th><th>Route</th></tr></thead><tbody id="dashHistory"></tbody></table></div></div></div></div></div>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/main.js"></script>
+<script src="js/dashboard.js"></script>
+</body></html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Product Details — Trackora</title><meta name="description" content="Trackora — premium GPS tracking frontend concept (demo).">
+<link rel="icon" type="image/svg+xml" href="assets/logos/favicon.svg">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/products.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head><body>
+<div class="topbar">Frontend demo — sample products, prices and data. Nothing here is a real offer.</div>
+<header class="navbar"><div class="container nav-inner">
+  <a class="logo" href="index.html" aria-label="Trackora home"><img src="assets/logos/logo.svg" alt="Trackora"></a>
+  <ul class="nav-menu" id="navMenu">
+    <li class="has-dropdown"><button class="nav-link" data-nav="products" aria-haspopup="true" aria-expanded="false">Products <svg class="arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></button>
+      <div class="dropdown">
+        <a href="products.html"><img src="assets/icons/grid.svg" alt="" >All Trackers</a>
+        <a href="vehicle-trackers.html"><img src="assets/icons/car.svg" alt="" >Vehicle Trackers</a>
+        <a href="personal-trackers.html"><img src="assets/icons/user.svg" alt="" >Personal Trackers</a>
+        <a href="asset-trackers.html"><img src="assets/icons/box.svg" alt="" >Asset Trackers</a>
+      </div></li>
+    <li><a class="nav-link" href="how-it-works.html">How It Works</a></li>
+    <li><a class="nav-link" href="features.html">Features</a></li>
+    <li><a class="nav-link" href="pricing.html">Pricing</a></li>
+    <li class="has-dropdown"><button class="nav-link" data-nav="support" aria-haspopup="true" aria-expanded="false">Support <svg class="arrow" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4l4 4 4-4"/></svg></button>
+      <div class="dropdown"><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></div></li>
+    <li class="mobile-only"><a class="nav-link" href="login.html">Login</a></li>
+    <li class="mobile-only" style="padding:16px 0"><a class="btn btn-primary btn-block" href="products.html">Shop / Explore</a></li>
+  </ul>
+  <div class="nav-actions">
+    <a class="nav-link btn-login" href="login.html">Login</a>
+    <a class="btn btn-primary btn-sm btn-shop" href="products.html">Shop / Explore</a>
+    <button class="cart-btn" data-open-cart aria-label="Open cart"><svg viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l3 12h11l2-8H6"/></svg><span class="cart-count" style="display:none">0</span></button>
+    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</div></header>
+<section class="page-hero"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <a href="products.html">Products</a> / <span id="crumbName">Product</span></div><h1>Product Details</h1><p>Sample product page with specifications, features and related items.</p></div></section>
+ <section class="section"><div class="container"><div id="detailRoot"></div></div></section>
+ <section class="section soft"><div class="container"><div class="section-head"><h2>Related products</h2></div><div class="product-grid" id="relatedGrid"></div></div></section>
+<footer class="footer"><div class="container">
+ <div class="footer-grid">
+  <div><a class="logo" href="index.html"><img src="assets/logos/logo.svg" alt="Trackora"></a><p>A frontend concept for a premium GPS tracking brand. Backend, real devices, maps and payments will be added later.</p></div>
+  <div><h4>Products</h4><ul><li><a href="products.html">All Trackers</a></li><li><a href="vehicle-trackers.html">Vehicle Trackers</a></li><li><a href="personal-trackers.html">Personal Trackers</a></li><li><a href="asset-trackers.html">Asset Trackers</a></li></ul></div>
+  <div><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="how-it-works.html">How It Works</a></li><li><a href="features.html">Features</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+  <div><h4>Support</h4><ul><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li><li><a href="login.html">Login</a></li><li><a href="dashboard.html">Portal preview</a></li></ul></div>
+ </div>
+ <div class="footer-bottom"><span>© <span data-year>2026</span> Trackora. Demo project — not a real company or service.</span><span>Sample prices in PKR. Specifications are unverified placeholders.</span></div>
+</div></footer>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/main.js"></script>
+</body></html>
